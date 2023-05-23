@@ -1,4 +1,146 @@
-/*! SASS #style  */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
 body {
-  background-color: red;
+  color: #F9F9F9;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "codeconf";
+  src: url("fonts/codeconf.ttf") format("truetype"), url("fonts/codeconf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "codeconf" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-burger:before {
+  content: "\e93e";
+}
+
+.icon-schedule:before {
+  content: "\e93f";
+  margin-right: 0.5em;
+}
+
+.icon-loop:before {
+  content: "\e940";
+  color: #FF9678;
+}
+
+.icon-contact:before {
+  content: "\e941";
+}
+
+.icon-event:before {
+  content: "\e942";
+}
+
+.icon-home:before {
+  content: "\e943";
+}
+
+.icon-card:before {
+  content: "\e944";
+}
+
+.icon-paypal:before {
+  content: "\e945";
+}
+
+.icon-tw:before {
+  content: "\e946";
+}
+
+.icon-slack:before {
+  content: "\e947";
+}
+
+.icon-heart_full:before {
+  content: "\e948";
+}
+
+.icon-heart_line:before {
+  content: "\e949";
+}
+
+.icon-square_full:before {
+  content: "\e94a";
+}
+
+.icon-square_line:before {
+  content: "\e94b";
+}
+
+.icon-spade_full:before {
+  content: "\e94c";
+}
+
+.icon-spade_line:before {
+  content: "\e94d";
+}
+
+.icon-clover_full:before {
+  content: "\e94e";
+}
+
+.icon-clover_line:before {
+  content: "\e94f";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #3a353a;
+  gap: 2em;
+}
+
+.nav {
+  color: #3a353a;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5em;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.schedule {
+  text-decoration: none;
+  color: #4D436D;
 }/*# sourceMappingURL=style.css.map */
