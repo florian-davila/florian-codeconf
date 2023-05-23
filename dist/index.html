@@ -1,41 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link 
-  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-  rel="stylesheet"  type='text/css'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+
     <title>Document</title>
-</head>
-<body>
-	<header>
-        <div class="logo">
-          <img src="./image/codeconf2020.svg" alt="Logo">
-        </div>
-        <div class="header-right">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./image/logo2023.svg" alt="Logo" />
+      </div>
+      <div class="header-right">
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>|
-            <li><a href="#">Event</a></li>|
-            <li><a href="#">Speakers</a></li>|
-            <li><a href="#">Team</a></li>|
+            <li><a href="#">Home</a></li>
+            |
+            <li><a href="#">Event</a></li>
+            |
+            <li><a href="#">Speakers</a></li>
+            |
+            <li><a href="#">Team</a></li>
+            |
             <li><a href="#">Contact</a></li>
-        
           </ul>
         </nav>
-        <a class="schedule" href="#"><span class="icon icon-schedule"></span>Schedule</a>
+        <a class="schedule" href="#"
+          ><span class="icon icon-schedule"></span>Schedule</a
+        >
         <i class="icon icon-loop"></i>
-    </div>
-      </header>
-      <main>
-        <div class="slider">
-          <h1>Speakers Edition</h1>
+      </div>
+    </header>
+    <main>
+      <div class="slider">
+        <img
+          src="./image/pattern-stripes-left.png"
+          alt="bulles de différentes couleurs"
+        />
+        <img
+          class="presentor"
+          src="./image/presents.png"
+          alt="bulles de différentes couleurs"
+        />
+        <div class="text-intro">
+          <h1>Speakers Edition 2023</h1>
+          <h2>
+            Discover the speakers and the topics or suggest your own topic for
+            our next event
+          </h2>
         </div>
-      </main>
 
-   
-</body>
+        <img
+          src="./image/pattern-stripes-right.png"
+          alt="bulles de différentes couleurs"
+        />
+      </div>
+      <div class="pagination">
+        <i class="icon icon-home"></i>
+
+        <p>Speakers</p>
+      </div>
+      <div class="grid">
+        <div class="speaker">
+          <div class="gradient">
+            <img src="./image/chris@3x.jpg" alt="" />
+          </div>
+
+          <img
+            class="speaker_bubble"
+            src="./image/pattern_stripes.png"
+            alt=""
+          />
+
+          <h2>Chris Coyier</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/sara@3x.jpg" alt="" />
+          <h2>Sara Soueidan</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/eric@3x.jpg" alt="" />
+          <h2>Eric Meyer</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/lea@3x.jpg" alt="" />
+          <h2>Lea Verou</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/shirley@3x.jpg" alt="" />
+          <h2>Shirley Wu</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/luke@3x.jpg" alt="" />
+          <h2>Luke Wroblewski</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/nico@3x.jpg" alt="" />
+          <h2>Nicolas Gallagher</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/rachel@3x.jpg" alt="" />
+          <h2>Rachel Andrew</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/stephen@3x.jpg" alt="" />
+          <h2>Stephen Hay</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/paul@3x.jpg" alt="" />
+          <h2>Paul Irish</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/nicole@3x.jpg" alt="" />
+          <h2>Nicole Sullivan</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+        <div class="speaker">
+          <img src="./image/brad@3x.jpg" alt="" />
+          <h2>Brad Frost</h2>
+          <p>Milwaukee, WI</p>
+        </div>
+      </div>
+      <div class="contain">
+
+  
+
+        <div class="form">
+          <h3>Send us a message</h3>
+          <form action="">
+            <p>
+              <label for="">Name*</label>
+              <input type="text">
+            </p>
+            <p>
+              <label for="">Mail*</label>
+              <input type="text">
+            </p>
+            <p>
+              <label for="">Your Subject*</label>
+              <input type="text">
+            </p>
+            <p>
+              <label for="">Keywords*</label>
+              <input type="text">
+            </p>
+            <p class="full-width">
+              <label for="">Write your message</label>
+              <textarea name="" id="" cols="30" rows="7"></textarea>
+            </p>
+            <p class="full-width">
+              <button>Send</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    </main>
+  </body>
 </html>

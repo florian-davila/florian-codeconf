@@ -1,6 +1,114 @@
 .slider{
+    
     background: rgb(121,85,242);
 background: radial-gradient(circle, rgba(121,85,242,1) 17%, rgba(100,77,240,1) 81%);
-height: 10em;
-width: 100%;
+height: 13em;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 3em;
+}
+
+.slider img:nth-child(1) {
+    max-width:15em;
+    height: 2em;
+    margin-top: -0.5em;
+}
+.slider img:nth-child(4){   
+    max-width: 40em;
+    height: 2em;
+    margin-left: -10em;
+    margin-top: -1em;
+}
+.presentor{
+height: 18em;
+margin-top: -5em;
+width:22em;
+}
+.text-intro{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: #fff;
+}
+H1{
+    font-size: 3.5em;
+    font-family: 'Museo', serif;
+    font-weight: 700;
+    margin: 0;
+    
+    
+
+    
+}
+H2{
+    font-size: 2em;
+    font-family: 'Maven pro', sans-serif;
+    font-weight: 400;
+    margin: 0;
+   
+    
+    
+}
+.pagination{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.pagination i{
+    padding-right: 0.5em;
+    border-right: 2px solid #333;
+    
+}
+.pagination p{
+    font-size: 1.2em;
+    font-family: 'Museo', serif;
+    font-weight: 300;
+    color: $schedule-color;
+
+    
+}
+.grid{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+} 
+
+.grid img {
+max-width: 100%;
+}
+.gradient {
+    position: relative;
+   
+ }
+ 
+ .gradient:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 99.2%;
+    
+background: linear-gradient(120deg, rgba(84, 45, 255, 0.5) 0%, rgba(222,222,222,.3) 50%, rgba(0,192,172,.5) 100%);
+ }
+.speaker_bubble{
+    width: 40%;
+    display: flex;
+    align-self: end;
+    margin-top: -1.5em;
+    z-index: 1;
+}
+.speaker{
+    display: flex;
+    flex-direction: column;
+
 }

@@ -1,10 +1,10 @@
 header {
-    
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     
+    margin: 0 auto;
     font-family: 'Maven Pro', sans-serif;
    
   }
@@ -21,7 +21,7 @@ header {
     
   }
   .logo img {
-    width: 100px;
+    width: 60%;
     height: auto;
   }
   
@@ -43,4 +43,5 @@ header {
   .schedule{
     text-decoration: none;
     color: $schedule-color;
-  }
+    
+  } 
