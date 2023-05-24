@@ -1,5 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body{
     background-color:#F9F9F9;
-  
+   
     margin: 0 auto;
 }

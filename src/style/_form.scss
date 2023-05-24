@@ -44,7 +44,7 @@ textarea{
   
   
   form {
-    width: 65%;
+    width: 65vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5em;
@@ -79,7 +79,7 @@ textarea{
     display: block;
   }
  
- .intro-form, h3, h4 {
+ .intro-form, h3, .subtitle {
     margin: 0 auto;
     text-align: center;
     padding-top: 1em;
@@ -91,7 +91,7 @@ textarea{
     color: #614AEF;
     
   }
-  H4{
+  .subtitle{
     font-size: 1.5em;
     font-family: 'Museolight', sans-serif;
     font-weight: 400;
