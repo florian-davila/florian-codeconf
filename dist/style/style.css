@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
+.hero {
+  display: grid;
+  max-width: 100rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  background: rgb(121, 85, 242);
+}
+.hero img {
+  position: relative;
+  z-index: 2;
+  margin-block-start: -3rem;
+  width: 100%;
+  grid-column: 3/6;
+  grid-row: span 2;
+  pointer-events: none;
+  align-self: end;
+}
+.hero h1, .hero p {
+  grid-column: 6/11;
+}
+.hero h1 {
+  align-self: end;
+}
+.hero p {
+  align-self: start;
+}
+
 main {
   width: 80vw;
   margin: 0 auto;
@@ -10,10 +37,22 @@ main {
   margin-bottom: 2em;
 }
 
+.hero img:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.hero img:nth-child(5) {
+  grid-column: 10/13;
+  align-self: end;
+}
+
+/*
 .slider {
   background: rgb(121, 85, 242);
-  background: radial-gradient(circle, rgb(121, 85, 242) 17%, rgb(100, 77, 240) 81%);
+
   height: 13em;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,38 +64,35 @@ main {
   height: 2em;
   margin-top: -0.5em;
 }
-
 .slider img:nth-child(4) {
   max-width: 40em;
   height: 2em;
   margin-left: -10em;
   margin-top: -1em;
 }
-
 .presentor {
   height: 18em;
   margin-top: -5em;
   width: 22em;
 }
-
 .text-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-}
-
+} */
 H1 {
   font-size: 3.5em;
   font-family: "Museobold", serif;
   margin: 0;
 }
 
-.slider p {
+.hero p {
   font-size: 2em;
   font-family: "Maven pro", sans-serif;
   font-weight: 400;
   margin: 0;
+  color: #fff;
 }
 
 .pagination {

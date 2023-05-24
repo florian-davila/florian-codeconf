@@ -1,4 +1,31 @@
-
+.hero {
+    display: grid;
+    
+    max-width: 100rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
+    background: rgb(121, 85, 242);
+   
+    img {
+      position: relative;
+      z-index: 2;
+      margin-block-start: -3rem;
+      width: 100%;
+      grid-column: 3/6;
+      grid-row: span 2;
+      pointer-events: none;
+      align-self: end;
+    }
+    h1, p {
+      grid-column: 6/11;
+    }
+    h1 {
+      align-self: end;
+    }
+    p {
+      align-self: start;
+    }
+  }
 main{
     width: 80vw;
     margin: 0 auto;
@@ -6,14 +33,20 @@ main{
 }.pagination {
   margin-bottom: 2em;
 }
+.hero img:nth-child(1) {
+   
+    grid-column: 1/2;
+    grid-row: 1/2;
 
+  }
+  .hero img:nth-child(5) {
+    grid-column: 10/13; 
+    align-self: end;
+  }
+/*
 .slider {
   background: rgb(121, 85, 242);
-  background: radial-gradient(
-    circle,
-    rgba(121, 85, 242, 1) 17%,
-    rgba(100, 77, 240, 1) 81%
-  );
+  
   height: 13em;
 
   display: flex;
@@ -43,18 +76,20 @@ main{
   flex-direction: column;
   justify-content: center;
   color: #fff;
-}
+} */
 H1 {
   font-size: 3.5em;
   font-family: "Museobold", serif;
 
   margin: 0;
 }
-.slider p {
+.hero p {
   font-size: 2em;
   font-family: "Maven pro", sans-serif;
   font-weight: 400;
   margin: 0;
+  color: #fff;
+  
 }
 .pagination {
   width: 75vw;
