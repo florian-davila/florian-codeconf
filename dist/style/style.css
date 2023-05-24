@@ -265,34 +265,74 @@ footer {
 
 .footer_button {
   font-weight: 500;
-  width: 12em;
+  width: 15rem;
   background-color: #FF3800;
   margin: 0 auto;
   border: none;
   border-radius: 2em;
   color: #ffffff;
   position: relative;
-  padding: 1.5em;
+  padding: 2rem;
   display: flex;
   justify-content: space-around;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: "Maven Pro", sans-serif;
   align-items: center;
-  margin-bottom: -3rem;
-  z-index: 2;
-  -webkit-box-shadow: 0px 0px 5px 20px rgba(255, 56, 0, 0.33);
-  box-shadow: 0px 0px 5px 15px rgba(255, 56, 0, 0.33);
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 5px 25px rgba(255, 56, 0, 0.33);
+  box-shadow: 0px 0px 5px 25px rgba(255, 56, 0, 0.33);
+}
+
+.footer_button img {
+  width: 1.2em;
+}
+
+.footer_price {
+  margin: 0 auto;
+  width: 8rem;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  margin-bottom: -4rem;
+  padding-block: 1rem;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #262629;
 }
 
 .parent {
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 5rem;
   width: 75vw;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
-  grid-column-gap: 5em;
-  grid-row-gap: 5em;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+  padding-bottom: 5rem;
+}
+
+h4 {
+  margin: 0;
+  color: #00e3e7;
+  font-family: "Museobold", sans-serif;
+  font-size: 2em;
+}
+
+.convention_adresse {
+  color: #FFFFFF;
+  font-family: "Museobold", sans-serif;
+  font-size: 1.5em;
+}
+
+.convention_text {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #EBEBEB;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 .sponso {
@@ -309,8 +349,11 @@ footer {
 .photo {
   grid-column: 4/7;
   object-fit: cover;
-  max-width: 100%;
   overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
 }
 
 .cisco {
@@ -320,29 +363,30 @@ footer {
 .follow {
   border: 1px solid #cbcbcb;
   border-radius: 0.5em;
-  padding-inline: 6em;
+  justify-content: space-around;
   grid-column: 1/4;
-  gap: 0;
+  width: auto;
 }
 
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #EFE6DF;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   font-family: "Museonormal", sans-serif;
 }
 
 .follow_title {
   font-family: "Museonormal", sans-serif;
-  color: #00C2C5;
-  font-size: 1.8em;
+  color: #00e3e7;
+  font-size: 1.8rem;
+  margin-left: 4rem;
 }
 
 .links p {
   display: flex;
-  gap: 0.5em;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -351,7 +395,36 @@ footer {
 }
 
 .contact {
+  grid-column: 4/7;
+  display: flex;
+  flex-direction: row;
   font-family: "Museonormal", sans-serif;
+  color: #Cbcbcb;
+  font-size: 1.3rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call p:nth-child(1) {
+  margin-bottom: -0.8em;
+}
+
+.copyright p {
+  margin-bottom: 0.3em;
+}
+
+.call p:nth-child(3) {
+  margin-top: -0.8em;
+  color: #DDC8B2;
+}
+
+.copyright p:nth-child(3) {
+  margin-top: 0.2em;
+  color: #DDC8B2;
 }
 
 header {
