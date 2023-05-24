@@ -1,5 +1,5 @@
 header {
-    width: 95%;
+    width: 78%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,4 +44,9 @@ header {
     text-decoration: none;
     color: $schedule-color;
     
+    
+    
   } 
+  .pagination{
+    padding-block: 2em;
+  }

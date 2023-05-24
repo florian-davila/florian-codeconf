@@ -1,4 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Museolight';
+  src: url('webfonts/museo/museo300.woff') format('woff');
+  font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Museonormal';
+  src: url('webfonts/museo/museo500.woff') format('woff');
+  font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Museobold';
+  src: url('webfonts/museo/museo700.woff') format('woff');
+  font-weight: normal;
+   font-style: normal;
+}
 @font-face {
     font-family: 'codeconf';
     src:
@@ -52,6 +71,8 @@
   }
   .icon-paypal:before {
     content: "\e945";
+    color: #0085D3;
+
   }
   .icon-tw:before {
     content: "\e946";
