@@ -1,0 +1,102 @@
+.card_off{
+    display: none;
+    background-color: #FFEEE6;
+
+}
+.card_off p:nth-child(1){
+    color: #4C426D;
+    font-family:"Museobold", serif;
+    font-size: 1.6em;
+    font-weight: normal;
+    margin: 2rem 0 0 1.5rem;
+}
+.card_text p:nth-child(1){
+    color: #333;
+    font-family:"Museobold", serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0 0 0 1.5rem;
+}
+.card_text p:nth-child(2){
+    color: #333;
+    font-family:"Maven Pro", serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 0 1.5rem 0 1.5rem;
+    
+}
+time:after {
+    content: "|";
+    margin-left: .5rem;
+  }
+  .card_info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5rem;
+  }
+  .card_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 1.5rem;
+    font-size: 1.3rem;
+  }
+  time{
+    
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    
+  }
+  .card_footer span{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+  }
+  .card_footer button{
+    background: none;
+    border: none;
+    font-family:"Maven Pro", sans-serif ;
+    text-transform: uppercase ;
+    font-weight: 500;
+    color: #FF431A;
+    padding: .5rem;
+    padding-inline: 1rem;
+    border: 1px solid red;
+    border-radius: 2rem;
+    
+   
+  }
+.gradient {
+    position: relative;
+    display: inline-flex; /* Utilise flex pour centrer verticalement le texte */
+    align-items: center; /* Centre verticalement le contenu */
+  }
+  
+  .gradient:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; /* Ajustez la taille du cercle selon vos besoins */
+    height: 150px; /* Ajustez la taille du cercle selon vos besoins */
+    border-radius: 50%;
+    background-color:#FF3700;
+    opacity: 1; /* Ajustez l'opacité du cercle selon vos préférences */
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(255,55,0,0.5); 
+    box-shadow: 0px 0px 0px 20px rgba(255,55,0,0.5);  }
+  
+  /* Style du texte à l'intérieur du cercle */
+  .gradient:hover::after {
+    content: "More\Ainfo";
+    white-space: pre-wrap;
+    text-transform: uppercase;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: center; /* Centre le texte horizontalement */
+    padding-top: 45%;
+    z-index: 12;
+    line-height: 1; /* Centre le texte verticalement */
+    width: 100%; /* Définit la largeur du texte à 100% pour centrer horizontalement */
+  }

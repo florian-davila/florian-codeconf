@@ -14,6 +14,9 @@
       grid-column: 3/6;
       grid-row: span 2;
       pointer-events: none;
+      
+    }
+    .presentor{
       align-self: end;
     }
     h1, p {
@@ -34,14 +37,18 @@ main{
   margin-bottom: 2em;
 }
 .hero img:nth-child(1) {
-   
+  margin-block-start: -1rem;
     grid-column: 1/2;
-    grid-row: 1/2;
+    width: 150%;
+  
 
   }
   .hero img:nth-child(5) {
     grid-column: 10/13; 
-    align-self: end;
+    margin-block-start: -21rem;
+   
+    
+    
   }
 /*
 .slider {
@@ -77,10 +84,31 @@ main{
   justify-content: center;
   color: #fff;
 } */
+.speaker p:nth-child(3), .speaker strong{
+  color: #4C426D;
+  font-family:"Museonormal", serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0 0 0 1rem;
+}
+.speaker p:nth-child(3){
+  font-size: 1.2em;
+  font-family:"Museonormal", serif;
+  margin: 1rem 0 0 1rem;
+}
+.speaker p:nth-child(5){
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family:"Maven Pro", serif;
+  margin-left: 1rem;
+  margin-top: .3rem;
+  color: #a8a8c1;
+  
+}
 H1 {
   font-size: 3.5em;
   font-family: "Museobold", serif;
-
+  color: #fff;
   margin: 0;
 }
 .hero p {
@@ -105,15 +133,15 @@ H1 {
 }
 .pagination p {
   font-size: 1.2em;
-  font-family: "Museo", serif;
+  font-family: "Museolight", serif;
   font-weight: 300;
   color: $schedule-color;
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 //   justify-content: space-between;
   margin: 0 auto;
   width: 90%;
@@ -127,27 +155,22 @@ H1 {
   position: relative;
 }
 
+
 .gradient:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 99.2%;
-  background: linear-gradient(
-    130deg,
-    rgba(116, 89, 241, 0.6) 35%,
-    rgba(234, 240, 239, 0.3) 55%,
-    rgba(234, 240, 239, 0.3) 75%,
-    rgba(0, 192, 172, 0.6) 80%
-  );
+  height: 100%;
+  
 }
 .speaker_bubble {
   width: 50%;
   display: flex;
   align-self: end;
   margin-top: -1.5em;
-  z-index: 1;
+  z-index: 5;
 }
 .speaker {
   display: flex;

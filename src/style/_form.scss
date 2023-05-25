@@ -50,6 +50,7 @@ textarea{
     column-gap: 5em;
     row-gap: 2em;
     margin: 0 auto;
+
   }
   form label {
     display: block;
@@ -68,7 +69,7 @@ textarea{
   
   form button {
     font-weight: 500;
-    width: 20%;
+    width: 20rem;
     border: 2px solid #FF3800 ;
     margin: 0 auto;
     background: none;
@@ -82,13 +83,14 @@ textarea{
  .intro-form, h3, .subtitle {
     margin: 0 auto;
     text-align: center;
-    padding-top: 1em;
+    padding-top: 1.5rem;
   }
   h3{
     font-family: 'League Spartan', sans-serif;
     text-transform: uppercase;
     font-size: 2em;
     color: #614AEF;
+    padding-top: 5rem;
     
   }
   .subtitle{
