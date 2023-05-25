@@ -120,3 +120,31 @@ textarea{
     text-align: center;
     margin-bottom: 5rem;
   }
+  @media only screen and (max-width : 1400px){
+   .intro-form{
+      width: 60%;
+      font-size: 1em;
+    }
+
+  }
+  /* Smartphone */
+  @media only screen and (max-width : 480px) {
+    form{
+      display: flex;
+      flex-direction: column;
+    }
+    .intro-form{
+      width: 90%;
+      font-size: 1em;
+    }
+    .outro-form{
+      width: 70%;
+    }
+    .form button {
+      width: 100%;
+    }
+    .subtitle{
+      width:90%;
+      margin: 0 auto;
+    }
+    }

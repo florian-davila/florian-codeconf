@@ -64,6 +64,7 @@ time:after {
     padding-inline: 1rem;
     border: 1px solid red;
     border-radius: 2rem;
+   
     
    
   }
@@ -85,7 +86,8 @@ time:after {
     background-color:#FF3700;
     opacity: 1; /* Ajustez l'opacité du cercle selon vos préférences */
     -webkit-box-shadow: 0px 0px 0px 20px rgba(255,55,0,0.5); 
-    box-shadow: 0px 0px 0px 20px rgba(255,55,0,0.5);  }
+    box-shadow: 0px 0px 0px 20px rgba(255,55,0,0.5); 
+    }
   
   /* Style du texte à l'intérieur du cercle */
   .gradient:hover::after {
@@ -100,4 +102,5 @@ time:after {
     z-index: 12;
     line-height: 1; /* Centre le texte verticalement */
     width: 100%; /* Définit la largeur du texte à 100% pour centrer horizontalement */
+    
   }

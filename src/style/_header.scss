@@ -1,11 +1,13 @@
 header {
-    width: 75vw;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     margin: 0 auto;
     font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
    
   }
   .header-right{
@@ -50,3 +52,14 @@ header {
   .pagination{
     padding-block: 2em;
   }
+  .commercial::after{
+content:"|" ;
+margin-left: .7rem;
+  }
+
+  @media only screen and (max-width : 1200px){
+    header{
+      width: 90%;
+    }
+  }
+ 
