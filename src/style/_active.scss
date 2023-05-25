@@ -1,6 +1,7 @@
 .card_off{
     display: none;
     background-color: #FFEEE6;
+    height: 100%;
 
 }
 .card_off p:nth-child(1){
@@ -33,7 +34,7 @@ time:after {
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 5rem;
+    gap: 3rem;
   }
   .card_footer{
     display: flex;

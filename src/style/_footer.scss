@@ -92,12 +92,18 @@ h4{
 }
 .photo{
     grid-column: 4/7;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
     
-    overflow: hidden;
+    
 }
 .photo img{
-width: 100%;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+
 }
 .cisco{
     grid-column: 1/2;
@@ -152,8 +158,10 @@ width: 100%;
     margin-bottom:  -.8em;
     
 }
-.copyright p{
-    margin-bottom: .3em;
+.copyright p
+{
+  margin: 0;
+  margin-top: -.8rem;
 }
 .call p:nth-child(3){
 margin-top: -.8em;
