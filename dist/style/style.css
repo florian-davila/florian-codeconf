@@ -181,16 +181,15 @@ h2 {
   width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
 }
 
 .room_1 {
   grid-column: 1/2;
-  border: 1px solid #333;
 }
 
 .room_2 {
   grid-column: 2/3;
-  border: 1px solid #333;
 }
 
 .main_schedule h2 {
@@ -201,6 +200,12 @@ h2 {
 
 .main_schedule time::after {
   content: none;
+}
+
+.orator {
+  width: 100%;
+  border: 1px solid #333;
+  margin-block-start: 2rem;
 }
 
 .horaire {
