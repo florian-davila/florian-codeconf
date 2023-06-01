@@ -307,7 +307,7 @@ margin-left: .7rem;
       
       
       main {
-        padding: 3rem;
+        
         line-height: 1.6;
         font-family: "League Spartan", sans-serif;
         display: grid;
@@ -360,4 +360,7 @@ margin-left: .7rem;
         .main_header__menu .hidden-menu{
             
         display: block;
+      }
+      .main_header{
+        width: 95%;
       }}

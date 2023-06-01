@@ -1535,7 +1535,6 @@ nav * {
 }
 
 main {
-  padding: 3rem;
   line-height: 1.6;
   font-family: "League Spartan", sans-serif;
   display: grid;
@@ -1586,6 +1585,9 @@ main p {
 @media (max-width: 57rem) {
   .main_header__menu .hidden-menu {
     display: block;
+  }
+  .main_header {
+    width: 95%;
   }
 }
 .card_off {
@@ -1659,6 +1661,7 @@ time {
   padding-inline: 1rem;
   border: 1px solid red;
   border-radius: 2rem;
+  width: 60%;
 } /* 
 .gradient {
     position: relative;
