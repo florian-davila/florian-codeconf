@@ -10,6 +10,12 @@ header {
     margin-bottom: 1rem;
    
   }
+  .schedule-off{
+    display: none;
+  }
+  .icon-burger{
+    display: none;
+  }
   .header-right{
     display: flex;
     flex-direction: row;
@@ -20,6 +26,7 @@ header {
   }
   .nav {
     color: $nav-color;
+ 
     
   }
   .logo img {
@@ -62,4 +69,48 @@ margin-left: .7rem;
       width: 90%;
     }
   }
- 
+  @media only screen and (max-width : 1100px){
+    .icon-burger{
+      display: block;
+      cursor: pointer;
+    }
+    .icon-loop{
+      display: none;
+    }
+    #navigation{
+      display: none;
+      
+    }
+    .header-right a:nth-child(2){
+      display: none;
+    }
+   
+    .schedule-off{
+      display: block;
+    }
+    
+  
+    #navigation.active   {
+      display: grid;
+      
+      
+      
+      
+    }#navigation.active  ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    
+      
+    }
+    .commercial::after{
+      content: none;
+    }
+    
+   
+   
+  }
+
+   
+    
+  

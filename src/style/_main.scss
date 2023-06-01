@@ -162,16 +162,6 @@ H1 {
   position: relative;
 }
 
-
-.gradient:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-}
 .speaker_bubble {
   width: 50%;
   display: flex;
@@ -187,9 +177,14 @@ H1 {
 h2 {
   white-space: pre-line;
 }
+@media only screen and (max-width: 1300px) and (min-width: 1400px){
+  .grid{
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
 @media only screen and (max-width : 1400px){
   .grid{
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
   .hero p {
     font-size: 2em;
@@ -218,6 +213,9 @@ h2 {
     
     
    
+  }
+  .grid{
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
   .hero h1{
     grid-area: 1/5/1/12;
@@ -265,6 +263,61 @@ h2 {
   }
 }
 @media only screen and (max-width : 480px) {
+  main{
+    width: 100%;
+  }
+  .grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .gradient{
+  display: grid;
+  margin-inline-end: 1rem ;
+ }
+  .gradient img{
+  border-radius: 120px;
+  height: 120px;
+  width: 120px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+  
+  }
+  .speaker{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:1fr;
+    aspect-ratio: auto;
+    
+  }
+  .speaker strong , .speaker p{
+    grid-area: 1/1/1/1;
+    margin-block-end: 0;
+  }
+  .speaker p:nth-child(3){
+    margin: 1rem 0 0 1rem;
+    
+  }
+  .speaker strong{
+    margin: 2.5rem 0 0 1rem;
+    
+  }
+  .speaker p:nth-child(5){
+    margin: 4rem 0 0 1rem;
+    
+    
+  }
+  .speaker img:nth-child(1){
+    grid-area: 1/1/1/2;
+    align-self: start;
+    justify-self: end;
+    
+  }
+  .speaker_bubble{
+    display: none;
+  }
   .hero{
     grid-template-columns:repeat(6, 1fr); 
 
@@ -313,5 +366,10 @@ h2 {
    
 
 
+  }
+}
+@media only screen and (min-width : 1800px){
+  .grid{
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 }

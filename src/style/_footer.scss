@@ -75,6 +75,9 @@ h4{
     font-family: 'Museobold', sans-serif;
     font-size: 1.5em;
 }
+.map-mark{
+    display: none;
+}
 .convention_text{
     font-family: 'League Spartan', sans-serif;
     font-size: 1.5rem;
@@ -203,4 +206,111 @@ margin: 0;
         align-self: center;
         justify-self: center;
     }
+}
+@media only screen and (max-width : 480px){
+    .parent{
+        width: 100%;
+        
+        display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, auto);
+grid-column-gap: 0px;
+grid-row-gap: 3em;
+    }
+  
+    .convention{
+        grid-area: 1/1/1/4;
+        order: 1;
+        position: relative;
+        justify-self: center;
+        display: grid;
+        width: 90%;
+    }
+    .call{
+        grid-area: 2/1/3/4;
+        order: 2;
+        position: relative;
+    }
+    .follow{
+        grid-column: 1/4;
+        border: none;
+        border-top: 1px solid #616161;
+        border-radius: 0em;
+        width: 100%;
+    }
+    .copyright{
+        grid-column: 1/4;
+        border-top: 1px solid #616161;
+        width: 100%;
+        justify-content: center;
+        display: grid;
+        padding-top: 2em;
+       
+    }.call{
+        
+    
+        width: 90%;
+        justify-content: start;
+        display: grid;
+        
+    }
+    .copyright p:nth-child(3), .call p:nth-child(3){
+        display: inline;
+        grid-column: 1/4;
+        font-family: "Museobold", sans-serif;
+        
+    }
+    .copyright p:nth-child(1), .call p:nth-child(1){
+        padding-inline-end: .3rem;
+        font-family: "Museobold", sans-serif;
+        display: inline;
+        
+    }
+    .call p:nth-child(1){
+        font-size: 1.1rem;
+        padding-inline-end: .5rem;
+    }
+    .call p:nth-child(2){
+        font-size: 1.1rem;
+        margin-block-start: 0;
+    }
+    .copyright span, .call p:nth-child(2){
+        display: inline;
+        font-family: "Museobold", sans-serif;
+        
+    }
+    .sponso img{
+        width: 80%;
+        display: grid;
+        justify-self: center;
+    }
+    .follow_title{
+        width: 90%;
+        color:#DDC8B2 ;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    h4{
+        color:#DDC8B2 ;
+        font-size: 1.3rem;
+    }
+    .convention_text{
+        font-size: 1em;
+        line-height: 1.8em;
+        
+    }
+    .map-mark{
+        display: inline;
+        padding-inline: 1rem;
+    }
+    .convention_adresse{
+       font-size: 1rem;
+       border: 1px solid #fff;
+       border-radius: 2em;
+       padding-block: 1rem;
+       justify-content: center;
+       
+    }
+    
+    
 }

@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css" />
-
     <title>Document</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
         <img class="presentor" src="./image/logo2023.svg" alt="Logo" />
       </div>
       <div class="header-right">
-        <nav>
+        <nav id="navigation">
           <ul>
             
             
@@ -30,7 +31,10 @@
         <a class="schedule" href="#"
           ><span class="icon icon-schedule"></span>Schedule</a
         >
+        <i class="icon schedule-off icon-schedule"></i>
         <i class="icon icon-loop"></i>
+        <i class="icon icon-burger"></i>
+        
       </div>
     </header>
     <div class="hero">
@@ -92,7 +96,7 @@
               src="./image/pattern_stripes.png"
               alt=""
             />
-
+            
             <p>Chris</p>
             <strong>Coyer</strong>
             <p>Milwaukee, WI</p>
@@ -110,7 +114,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">09:30</time>
+                  <time class="card__time">09h30</time>
                   <span class="card__room">R1</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -147,7 +151,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">10:15</time>
+                  <time class="card__time">10h15</time>
                   <span class="card__room">R1</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -182,7 +186,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">16:00</time>
+                  <time class="card__time">16h00</time>
                   <span class="card__room">R1</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -216,7 +220,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">16:00</time>
+                  <time class="card__time">16h00</time>
                   <span class="card__room">R2</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -253,7 +257,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">9:30</time>
+                  <time class="card__time">9h30</time>
                   <span class="card__room">R2</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -288,7 +292,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">11:30</time>
+                  <time class="card__time">11h30</time>
                   <span class="card__room">R1</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -325,7 +329,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">14:00</time>
+                  <time class="card__time">14h00</time>
                   <span class="card__room">R1</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -359,7 +363,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">15:00</time>
+                  <time class="card__time">15h00</time>
                   <span class="card__room">R1</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -396,7 +400,7 @@
               </div>
               <div class="card_footer">
                 <div>
-                  <time class="card__time">17:00</time>
+                  <time class="card__time">17h00</time>
                   <span class="card__room">R1</span>
                 </div>
                 <button href="#" class="card__link">About</button>
@@ -434,7 +438,7 @@
             </div>
             <div class="card_footer">
               <div>
-                <time class="card__time">10:30</time>
+                <time class="card__time">10h30</time>
                 <span class="card__room">R2</span>
               </div>
               <button href="#" class="card__link">About</button>
@@ -473,7 +477,7 @@
             </div>
             <div class="card_footer">
               <div>
-                <time class="card__time">11:30</time>
+                <time class="card__time">11h30</time>
                 <span class="card__room">R2</span>
               </div>
               <button href="#" class="card__link">About</button>
@@ -565,6 +569,9 @@
         <div class="convention">
           <h4>The Las Vegas Convention Center</h4>
           <p class="convention_adresse">
+          
+            <i class="fas fa-map-marker-alt  fa-xs map-mark"></i>
+          
             3150 Paradise Rd, Las Vegas, NV 89109
           </p>
           <p class="convention_text">
@@ -580,6 +587,7 @@
             alt="centre de convention de Las Vegas"
           />
         </div>
+        
         <div class="sponso cisco">
           <img src="./image/cisco.svg" alt="logo cisco" />
         </div>
@@ -613,7 +621,7 @@
             <p>(speaker’s support)</p>
           </div>
           <div class="copyright">
-            <p>organised by</p>
+            <p>organised by </p>
             <span>WebeesMeetups.com</span>
             <p class="copy">Copyright 2022</p>
           </div>
@@ -621,22 +629,42 @@
       </div>
     </footer>
     <script>
-      var cards = document.querySelectorAll(".card");
+       var iconMenu = document.querySelector(".icon-burger");
+var navigation = document.getElementById("navigation");
 
-      cards.forEach(function (card) {
-        var speaker = card.querySelector(".speaker");
-        var cardOff = card.querySelector(".card_off");
+iconMenu.addEventListener("click", function() {
+  navigation.classList.toggle("active");
+});
 
-        speaker.addEventListener("click", function () {
-          speaker.style.display = "none";
-          cardOff.style.display = "block";
-        });
+var cards = document.querySelectorAll(".card");
 
-        cardOff.addEventListener("click", function () {
-          cardOff.style.display = "none";
-          speaker.style.display = "flex";
-        });
-      });
+cards.forEach(function(card) {
+  var speaker = card.querySelector(".speaker");
+  var cardOff = card.querySelector(".card_off");
+
+  speaker.addEventListener("click", function() {
+    speaker.style.display = "none";
+    cardOff.style.display = "block";
+  });
+
+  cardOff.addEventListener("click", function() {
+    cardOff.style.display = "none";
+    
+    // Vérifier la largeur de l'écran lors du clic sur cardOff
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    // Vérifier si la largeur de l'écran est inférieure à 480 pixels
+    if (screenWidth < 480) {
+      speaker.style.display = "grid";
+    } else {
+      speaker.style.display = "flex";
+    }
+  });
+
+});
+
+
+
     </script>
   </body>
 </html>
