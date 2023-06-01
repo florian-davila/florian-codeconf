@@ -5,6 +5,7 @@
   display: grid;
   max-width: 100rem;
   margin: 0 auto;
+  margin-top: 2rem;
   grid-template-columns: repeat(12, 1fr);
   background: rgb(90, 77, 190);
   background: linear-gradient(0deg, rgb(90, 77, 190) 0%, rgb(121, 84, 242) 53%, rgb(109, 38, 242) 100%);
@@ -12,8 +13,8 @@
 .hero img {
   position: relative;
   z-index: 2;
-  margin-block-start: -3rem;
-  width: 100%;
+  margin-block-start: -5rem;
+  width: 85%;
   grid-area: 1/3/1/6;
   pointer-events: none;
 }
@@ -23,7 +24,10 @@
 .hero h1 {
   grid-row: 1/1;
   align-self: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+  font-family: "Museobold", serif;
+  color: #fff;
 }
 
 main {
@@ -45,6 +49,7 @@ main {
 .hero img:nth-child(5) {
   grid-area: 1/9/2/13;
   margin-block-start: -1rem;
+  width: 100%;
 }
 
 /*
@@ -104,26 +109,19 @@ main {
   color: #a8a8c1;
 }
 
-H1 {
-  font-size: 3.5rem;
-  font-family: "Museobold", serif;
-  color: #fff;
-  margin: 0;
-}
-
 .hero p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: "Maven pro", sans-serif;
   font-weight: 400;
   margin: 0;
   color: #fff;
   grid-row: 1/1;
   align-self: end;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .pagination {
-  width: 75vw;
+  width: 80vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -179,6 +177,40 @@ h2 {
   white-space: pre-line;
 }
 
+.main_schedule {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.room_1 {
+  grid-column: 1/2;
+  border: 1px solid #333;
+}
+
+.room_2 {
+  grid-column: 2/3;
+  border: 1px solid #333;
+}
+
+.main_schedule h2 {
+  color: yellow;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main_schedule time::after {
+  content: none;
+}
+
+.horaire {
+  grid-column: 1/3;
+  border-bottom: 1px solid #4C426D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1300px) and (min-width: 1400px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -193,7 +225,7 @@ h2 {
     grid-area: 1/6/1/12;
     justify-self: end;
     margin: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .hero h1 {
     font-size: 2.5em;
@@ -201,6 +233,9 @@ h2 {
   }
 }
 @media only screen and (max-width: 1250px) {
+  .hero {
+    margin-top: 1rem;
+  }
   .hero p {
     font-size: 1.8em;
     grid-area: 1/5/1/12;
@@ -216,6 +251,7 @@ h2 {
   }
   .hero img:nth-child(2) {
     grid-area: 1/2/1/5;
+    margin-block-start: -2rem;
   }
 }
 @media only screen and (max-width: 980px) {
@@ -347,6 +383,238 @@ body {
   margin: 0 auto;
 }
 
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
 @font-face {
   font-family: "Museolight";
   src: url("webfonts/museo/museo300.woff") format("woff");
@@ -473,20 +741,21 @@ footer {
 }
 
 .footer_button {
-  font-weight: 500;
-  width: 15rem;
+  font-weight: 700;
   background-color: #FF3800;
   margin: 0 auto;
   border: none;
   border-radius: 2em;
   color: #ffffff;
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
+  padding-inline: 2.5rem;
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
   font-family: "Maven Pro", sans-serif;
   align-items: center;
+  gap: 15px;
   z-index: 3;
   -webkit-box-shadow: 0px 0px 5px 25px rgba(255, 56, 0, 0.33);
   box-shadow: 0px 0px 5px 25px rgba(255, 56, 0, 0.33);
@@ -502,21 +771,22 @@ footer {
   position: relative;
   z-index: 3;
   display: flex;
-  margin-bottom: -5.5rem;
-  padding-block: 1rem;
+  margin-bottom: -4.5rem;
+  padding-block: 0.4rem;
   justify-content: center;
   border-radius: 0 0 20px 20px;
   border: none;
   color: #FFFFFF;
-  background-color: #262629;
+  background-color: #2c2c2d;
+  height: 2rem;
 }
 
 .parent {
   margin: 0 auto;
-  margin-top: 8rem;
-  width: 75vw;
+  margin-top: 10rem;
+  width: 80vw;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-template-rows: auto;
   grid-column-gap: 5rem;
   grid-row-gap: 5rem;
@@ -542,7 +812,7 @@ h4 {
 
 .convention_text {
   font-family: "League Spartan", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #EBEBEB;
   font-weight: 400;
   line-height: 2rem;
@@ -555,8 +825,17 @@ h4 {
   align-items: center;
 }
 
+.chimp {
+  grid-column: 6/7;
+  max-width: 90%;
+}
+
 .convention {
   grid-column: 1/4;
+}
+
+.convention_adresse, .convention_text {
+  margin-block: 0.8rem;
 }
 
 .photo {
@@ -578,7 +857,7 @@ h4 {
 }
 
 .follow {
-  border: 1px solid #cbcbcb;
+  border: 1px solid #515151;
   border-radius: 0.5em;
   justify-content: space-around;
   grid-column: 1/4;
@@ -590,7 +869,7 @@ h4 {
   flex-direction: row;
   justify-content: space-around;
   color: #EFE6DF;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "Museonormal", sans-serif;
 }
 
@@ -598,13 +877,16 @@ h4 {
   font-family: "Museonormal", sans-serif;
   color: #00e3e7;
   font-size: 1.8rem;
-  margin-left: 4rem;
+  margin-left: 2.5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 0;
 }
 
 .links p {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  margin-block-start: 1.5rem;
 }
 
 .call p:nth-child(2) {
@@ -618,15 +900,22 @@ h4 {
   color: #Cbcbcb;
   font-size: 1.3rem;
   flex-direction: column;
+  align-self: center;
 }
 
 .call {
-  grid-column: 4/6;
+  grid-area: 3/4/4/6;
 }
 
 .call p:nth-child(1) {
   margin: 0;
   margin-bottom: -0.8em;
+}
+
+.copyright {
+  grid-area: 3/5/4/7;
+  margin-left: 6rem;
+  margin-top: -1.7rem;
 }
 
 .copyright p {
@@ -643,6 +932,28 @@ h4 {
   color: #DDC8B2;
 }
 
+@media only screen and (max-width: 1400px) {
+  .call, .copyright {
+    font-size: 1.4em;
+  }
+  .copyright {
+    margin-left: 5rem;
+  }
+  .chimp {
+    max-width: 90%;
+  }
+  .parent {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .call, .copyright {
+    font-size: 1.35em;
+  }
+  .copyright {
+    margin-left: 5rem;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .parent {
     width: 90%;
@@ -654,7 +965,7 @@ h4 {
   .call {
     grid-area: 1/5/1/7;
     align-self: center;
-    justify-self: center;
+    margin-inline: 0;
   }
   .sponso img {
     width: 100%;
@@ -668,7 +979,16 @@ h4 {
   .copyright {
     grid-column: 5/7;
     align-self: center;
-    justify-self: center;
+    margin-inline: 0;
+  }
+  .chimp {
+    grid: 6/7;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .copyright {
+    font-size: 1.2em;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -702,6 +1022,7 @@ h4 {
   }
   .copyright {
     grid-column: 1/4;
+    grid-row: 6/7;
     border-top: 1px solid #616161;
     width: 100%;
     justify-content: center;
@@ -712,6 +1033,7 @@ h4 {
     width: 90%;
     justify-content: start;
     display: grid;
+    margin: 0 auto;
   }
   .copyright p:nth-child(3), .call p:nth-child(3) {
     display: inline;
@@ -734,6 +1056,9 @@ h4 {
   .copyright span, .call p:nth-child(2) {
     display: inline;
     font-family: "Museobold", sans-serif;
+  }
+  .chimp {
+    grid-column: auto;
   }
   .sponso img {
     width: 80%;
@@ -765,139 +1090,36 @@ h4 {
     padding-block: 1rem;
     justify-content: center;
   }
-}
-header {
-  width: 75%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  font-family: "Maven Pro", sans-serif;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.schedule-off {
-  display: none;
-}
-
-.icon-burger {
-  display: none;
-}
-
-.header-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #3a353a;
-  gap: 2em;
-}
-
-.nav {
-  color: #3a353a;
-}
-
-.logo img {
-  width: 10em;
-  height: auto;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 0.5em;
-}
-
-nav ul li {
-  margin-left: 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2em;
-}
-
-.schedule {
-  text-decoration: none;
-  color: #4D436D;
-}
-
-.pagination {
-  padding-block: 2em;
-}
-
-.commercial::after {
-  content: "|";
-  margin-left: 0.7rem;
-}
-
-@media only screen and (max-width: 1200px) {
-  header {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .icon-burger {
-    display: block;
-    cursor: pointer;
-  }
-  .icon-loop {
-    display: none;
-  }
-  #navigation {
-    display: none;
-  }
-  .header-right a:nth-child(2) {
-    display: none;
-  }
-  .schedule-off {
-    display: block;
-  }
-  #navigation.active {
-    display: grid;
-  }
-  #navigation.active ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .commercial::after {
-    content: none;
+  .links p {
+    font-size: 1.1rem;
   }
 }
 .contain {
   margin: 0 auto;
   background-color: #FFF;
 }
-
-input::placeholder, textarea::placeholder {
+.contain input::placeholder, .contain textarea::placeholder {
   font-family: "Maven Pro", sans-serif;
   color: #191919;
   font-size: 1.3em;
 }
-
-input:focus-visible {
+.contain input:focus-visible {
   outline: none;
 }
-
-textarea {
+.contain textarea {
   border: 1px solid #CBCBCB;
   background: none;
 }
-
-input {
+.contain form input {
   border: none;
   border-bottom: 1px solid #cbcbcb;
   background: none;
 }
-
-input,
-textarea {
+.contain input,
+.contain textarea {
   width: 100%;
 }
-
-ul {
+.contain ul {
   list-style: none;
   padding: 0;
 }
@@ -915,35 +1137,34 @@ form {
   row-gap: 2em;
   margin: 0 auto;
 }
-
 form label {
   display: block;
 }
-
-.full-width {
+form .full-width {
   grid-column: 1/3;
 }
-
 form button,
-input,
-textarea {
+form input,
+form textarea {
   padding: 1em;
 }
-
 form button {
-  font-weight: 500;
-  width: 20rem;
+  font-weight: 600;
+  padding-inline: 2.5rem;
   border: 2px solid #FF3800;
   margin: 0 auto;
   background: none;
   border-radius: 2em;
   color: #FF3800;
   font-family: "League Spartan", sans-serif;
-  font-size: 1.1em;
-  display: block;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
 }
 
-.intro-form, h3, .subtitle {
+.intro-form,
+h3,
+.subtitle {
   margin: 0 auto;
   text-align: center;
   padding-top: 1.5rem;
@@ -969,9 +1190,10 @@ h3 {
   font-family: "Maven Pro", sans-serif;
   font-weight: 400;
   margin: 0;
-  width: 30%;
+  width: 42%;
   margin: 0 auto;
   padding-bottom: 2em;
+  line-height: 1.5em;
 }
 
 .outro-form {
@@ -979,7 +1201,7 @@ h3 {
   font-family: "Maven Pro", sans-serif;
   font-weight: 400;
   margin: 0;
-  width: 20%;
+  width: 14rem;
   margin: 0 auto;
   padding-top: 2em;
   text-align: center;
@@ -992,7 +1214,6 @@ h3 {
     font-size: 1em;
   }
 }
-/* Smartphone */
 @media only screen and (max-width: 480px) {
   form {
     display: flex;
@@ -1005,12 +1226,361 @@ h3 {
   .outro-form {
     width: 70%;
   }
-  .form button {
+  button {
     width: 100%;
   }
   .subtitle {
     width: 90%;
     margin: 0 auto;
+  }
+}
+/* header {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-off{
+    display: none;
+  }
+  .icon-burger{
+    display: none;
+  }
+  .header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $nav-color;
+   gap: 2em;
+
+  }
+  .nav {
+    color: $nav-color;
+
+
+  }
+  .logo img {
+    width: 10em;
+    height: auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap:.5em;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+  }
+  .schedule{
+    text-decoration: none;
+    color: $schedule-color;
+
+
+
+  } 
+  .pagination{
+    padding-block: 2em;
+  }
+  .commercial::after{
+content:"|" ;
+margin-left: .7rem;
+  }
+
+  @media only screen and (max-width : 1200px){
+    header{
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width : 1100px){
+    .icon-burger{
+      display: block;
+      cursor: pointer;
+    }
+    .icon-loop{
+      display: none;
+    }
+    #navigation{
+      display: none;
+
+    }
+    .header-right a:nth-child(2){
+      display: none;
+    }
+
+    .schedule-off{
+      display: block;
+    }
+
+
+    #navigation.active   {
+      display: grid;
+
+
+
+
+    }#navigation.active  ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+
+
+    }
+    .commercial::after{
+      content: none;
+    }
+
+
+
+  } */
+.schedule {
+  text-decoration: none;
+  color: #4D436D;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+}
+
+.logo-after {
+  display: none;
+}
+
+.logo img {
+  width: 10em;
+  height: auto;
+  z-index: 20;
+}
+
+.commercial::after {
+  content: "|";
+  padding-inline: 0.8rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-active: #E44154;
+  --color-default: #2C1BA8;
+  --color-txt-light: #fff;
+  --color-txt-highlight: #DBC9B7;
+  --color-second: #4B436A;
+}
+
+.main_header {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 4rem;
+}
+@media (min-width: 57rem) {
+  .main_header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.main_header__nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.main_header__menu {
+  transition: opacity 0.4s, left 0.4s 0.2s;
+  list-style-type: none;
+  margin: 0;
+  padding: 1.5rem;
+}
+@media (max-width: 57rem) {
+  .main_header__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 100vw;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    align-content: end;
+    justify-items: end;
+    gap: 2rem;
+    background: var(--color-default);
+    border: 20px solid white;
+    opacity: 0;
+    z-index: 13;
+    padding-block-end: 5rem;
+  }
+}
+@media (min-width: 57rem) {
+  .main_header__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.main_header__menu .hidden-menu {
+  display: none;
+}
+.main_header__menu li {
+  display: flex;
+}
+.main_header__menu a {
+  font-size: 1.3rem;
+  font-family: "Maven Pro", sans-serif;
+  text-decoration: none;
+  color: var(--color-txt-light);
+}
+@media (min-width: 57rem) {
+  .main_header__menu a {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}
+.main_header__menu a:hover {
+  color: var(--color-active);
+}
+
+nav * {
+  transition: all 0.2s;
+}
+
+.burger-icon, .schedule-off {
+  position: relative;
+  z-index: 14;
+  pointer-events: none;
+  grid-area: 1/1/-1/-1;
+  display: grid;
+  grid-template-columns: 1.5rem;
+  min-height: 7rem;
+  justify-items: end;
+  align-content: center;
+  row-gap: 0.3rem;
+}
+@media (min-width: 57rem) {
+  .burger-icon, .schedule-off {
+    display: none;
+  }
+}
+.burger-icon hr, .schedule-off hr {
+  border: none;
+  width: 1.5rem;
+  margin: 0;
+  background: #333;
+  height: 2px;
+}
+.burger-icon hr:first-child, .schedule-off hr:first-child {
+  width: 1rem;
+}
+.burger-icon hr:last-child, .schedule-off hr:last-child {
+  width: 1.2rem;
+}
+
+.trigger {
+  grid-area: 1/1/-1/-1;
+  appearance: none;
+  position: relative;
+  z-index: 14;
+}
+@media (min-width: 57rem) {
+  .trigger {
+    display: none;
+  }
+}
+.trigger:checked ~ .logo-after {
+  display: block;
+  z-index: 16;
+  position: fixed;
+  left: 0;
+  margin: 5vh 0 0 12vw;
+}
+.trigger:checked ~ .schedule-off {
+  display: none;
+}
+.trigger:checked ~ .commercial::after {
+  content: none;
+}
+.trigger:checked ~ .main_header__menu {
+  transition: opacity 0.5s 0.2s, left 0.4s;
+  opacity: 1;
+  left: 0;
+}
+.trigger:checked ~ .burger-icon hr {
+  background: #fff;
+  width: 1.2rem;
+}
+.trigger:checked ~ .burger-icon hr:first-child {
+  transform: translateY(0.4rem) rotate(45deg);
+}
+.trigger:checked ~ .burger-icon hr:nth-child(2) {
+  opacity: 0;
+}
+.trigger:checked ~ .burger-icon hr:last-child {
+  transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+main {
+  padding: 3rem;
+  line-height: 1.6;
+  font-family: "League Spartan", sans-serif;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 30rem);
+}
+main h2 {
+  font-variation-settings: "wght" 560;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-txt-highlight);
+}
+main hr {
+  width: 100%;
+}
+main p {
+  color: #999;
+}
+
+@media (max-width: 57rem) {
+  .schedule-off {
+    margin-left: -3rem;
+  }
+  .icon-loop, .schedule {
+    display: none;
+  }
+  .commercial::after {
+    content: none;
+  }
+}
+@media (min-width: 57rem) {
+  .main_header__nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+@media (max-width: 1400px) {
+  .main_header {
+    width: 90%;
+  }
+}
+.color-red {
+  color: var(--color-active);
+}
+
+@media (max-width: 57rem) {
+  .main_header__menu .hidden-menu {
+    display: block;
   }
 }
 .card_off {

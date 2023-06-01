@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./style/style.css" />
-    <title>Document</title>
+    <title>Codeconf</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div class="logo">
         <img class="presentor" src="./image/logo2023.svg" alt="Logo" />
       </div>
@@ -36,7 +39,42 @@
         <i class="icon icon-burger"></i>
         
       </div>
+      </header>
+      -->
+    <header class="main_header">
+      <div class="logo">
+        <img src="./image/logo2023.svg" alt="Logo" />
+      </div>
+      
+      <nav class="main_header__nav">
+        <input type="checkbox" aria-hidden="true" class="trigger" />
+        <span class="burger-icon"
+          ><hr />
+          <hr />
+          <hr
+        /></span>
+        <img class="logo-after" src="./image/codeconf2020.svg" alt="Logo" />
+        <i class="icon schedule-off icon-schedule"></i>
+        <ul class="main_header__menu">
+          <i class="icon hidden-menu icon-loop"></i>
+          <li class="hidden-menu"><a href="">Schedule</a></li>
+          <li class="commercial"><a href="">Event</a></li>
+          <li class="commercial"><a href="">Speakers</a></li>
+          <li class="commercial"><a href="">Team</a></li>
+          
+          <li ><a href="">Contact</a></li>
+          <li class="hidden-menu"><a href="">Get Tickets</a></li>
+          
+
+        </ul>
+        <a class="schedule" href="#"
+          ><span class="icon icon-schedule"></span>Schedule</a
+        >
+
+        <i class="icon icon-loop"></i>
+      </nav>
     </header>
+
     <div class="hero">
       <img
         src="./image/pattern-stripes-left.png"
@@ -96,7 +134,7 @@
               src="./image/pattern_stripes.png"
               alt=""
             />
-            
+
             <p>Chris</p>
             <strong>Coyer</strong>
             <p>Milwaukee, WI</p>
@@ -312,7 +350,7 @@
               alt=""
             />
             <p>Nicolas</p>
-            <strong>Nicolas</strong>
+            <strong>Gallagher</strong>
             <p>San Francisco, CA</p>
           </div>
           <div class="card_off">
@@ -388,14 +426,12 @@
           </div>
           <div class="card_off">
             <div class="card_info">
-              <p class="card__orator">Stephen
-                Hay
-                </p>
+              <p class="card__orator">Stephen Hay</p>
               <div class="card_text">
-                <p class="card__topic">Zero interface thinking
-                </p>
+                <p class="card__topic">Zero interface thinking</p>
                 <p class="card__description">
-                  Everything we introduce has the potential to ruin everything. Ask: Is this absolutely necessary?
+                  Everything we introduce has the potential to ruin everything.
+                  Ask: Is this absolutely necessary?
                 </p>
               </div>
               <div class="card_footer">
@@ -409,81 +445,74 @@
           </div>
         </div>
         <div class="card">
-        <div class="speaker">
-          <div class="gradient">
-            <img src="./image/paul@3x.jpg" alt="" />
-          </div>
+          <div class="speaker">
+            <div class="gradient">
+              <img src="./image/paul@3x.jpg" alt="" />
+            </div>
 
-          <img
-            class="speaker_bubble"
-            src="./image/pattern_stripes.png"
-            alt=""
-          />
-          <p>Paul</p>
-          <strong>Irish</strong>
-          <p>Palo Alto, CA</p>
-        </div>
-        <div class="card_off">
-          <div class="card_info">
-            <p class="card__orator">Paul
-              Irish
-              
-              </p>
-            <div class="card_text">
-              <p class="card__topic">Developer Tooling, lighthouse
-              </p>
-              <p class="card__description">
-                Auditing, performance metrics, and best practices for Progressive Web Apps
-              </p>
-            </div>
-            <div class="card_footer">
-              <div>
-                <time class="card__time">10h30</time>
-                <span class="card__room">R2</span>
+            <img
+              class="speaker_bubble"
+              src="./image/pattern_stripes.png"
+              alt=""
+            />
+            <p>Paul</p>
+            <strong>Irish</strong>
+            <p>Palo Alto, CA</p>
+          </div>
+          <div class="card_off">
+            <div class="card_info">
+              <p class="card__orator">Paul Irish</p>
+              <div class="card_text">
+                <p class="card__topic">Developer Tooling, lighthouse</p>
+                <p class="card__description">
+                  Auditing, performance metrics, and best practices for
+                  Progressive Web Apps
+                </p>
               </div>
-              <button href="#" class="card__link">About</button>
+              <div class="card_footer">
+                <div>
+                  <time class="card__time">10h30</time>
+                  <span class="card__room">R2</span>
+                </div>
+                <button href="#" class="card__link">About</button>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <div class="card">
-        <div class="speaker">
-          <div class="gradient">
-            <img src="./image/nicole@3x.jpg" alt="" />
-          </div>
+          <div class="speaker">
+            <div class="gradient">
+              <img src="./image/nicole@3x.jpg" alt="" />
+            </div>
 
-          <img
-            class="speaker_bubble"
-            src="./image/pattern_stripes.png"
-            alt=""
-          />
-          <p>Nicole</p>
-          <strong>Sullivan</strong>
-          <p>San Francisco, CA</p>
-        </div>
-        <div class="card_off">
-          <div class="card_info">
-            <p class="card__orator">Nicole
-              Sullivan
-              
-              
-              </p>
-            <div class="card_text">
-              <p class="card__topic">OOCSS code standards
-              </p>
-              <p class="card__description">
-                Code conventions are important for the long-term maintainability of code
-              </p>
-            </div>
-            <div class="card_footer">
-              <div>
-                <time class="card__time">11h30</time>
-                <span class="card__room">R2</span>
+            <img
+              class="speaker_bubble"
+              src="./image/pattern_stripes.png"
+              alt=""
+            />
+            <p>Nicole</p>
+            <strong>Sullivan</strong>
+            <p>San Francisco, CA</p>
+          </div>
+          <div class="card_off">
+            <div class="card_info">
+              <p class="card__orator">Nicole Sullivan</p>
+              <div class="card_text">
+                <p class="card__topic">OOCSS code standards</p>
+                <p class="card__description">
+                  Code conventions are important for the long-term
+                  maintainability of code
+                </p>
               </div>
-              <button href="#" class="card__link">About</button>
+              <div class="card_footer">
+                <div>
+                  <time class="card__time">11h30</time>
+                  <span class="card__room">R2</span>
+                </div>
+                <button href="#" class="card__link">About</button>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <div class="card">
           <div class="speaker">
@@ -569,9 +598,8 @@
         <div class="convention">
           <h4>The Las Vegas Convention Center</h4>
           <p class="convention_adresse">
-          
-            <i class="fas fa-map-marker-alt  fa-xs map-mark"></i>
-          
+            <i class="fas fa-map-marker-alt fa-xs map-mark"></i>
+
             3150 Paradise Rd, Las Vegas, NV 89109
           </p>
           <p class="convention_text">
@@ -587,7 +615,7 @@
             alt="centre de convention de Las Vegas"
           />
         </div>
-        
+
         <div class="sponso cisco">
           <img src="./image/cisco.svg" alt="logo cisco" />
         </div>
@@ -614,57 +642,54 @@
             <p><i class="icon icon-tw"></i>@codeconf2023</p>
           </div>
         </div>
-        
-          <div class="call">
-            <p>Helpdesk Call-center</p>
-            <p>+1 702-892-0711</p>
-            <p>(speaker’s support)</p>
-          </div>
-          <div class="copyright">
-            <p>organised by </p>
-            <span>WebeesMeetups.com</span>
-            <p class="copy">Copyright 2022</p>
-          </div>
-        
+
+        <div class="call">
+          <p>Helpdesk Call-center</p>
+          <p>+1 702-892-0711</p>
+          <p>(speaker’s support)</p>
+        </div>
+        <div class="copyright">
+          <p>organised by</p>
+          <span>WebeesMeetups.com</span>
+          <p class="copy">Copyright 2022</p>
+        </div>
       </div>
     </footer>
     <script>
-       var iconMenu = document.querySelector(".icon-burger");
-var navigation = document.getElementById("navigation");
-
+      //let iconMenu = document.querySelector(".icon-burger");
+      let navigation = document.getElementById("navigation");
+    /*  
 iconMenu.addEventListener("click", function() {
   navigation.classList.toggle("active");
-});
+}); */ 
 
-var cards = document.querySelectorAll(".card");
+      let cards = document.querySelectorAll(".card");
 
-cards.forEach(function(card) {
-  var speaker = card.querySelector(".speaker");
-  var cardOff = card.querySelector(".card_off");
+      cards.forEach(function (card) {
+        let speaker = card.querySelector(".speaker");
+        let cardOff = card.querySelector(".card_off");
 
-  speaker.addEventListener("click", function() {
-    speaker.style.display = "none";
-    cardOff.style.display = "block";
-  });
+        speaker.addEventListener("click", function () {
+          speaker.style.display = "none";
+          cardOff.style.display = "block";
+        });
 
-  cardOff.addEventListener("click", function() {
-    cardOff.style.display = "none";
-    
-    // Vérifier la largeur de l'écran lors du clic sur cardOff
-    var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+        cardOff.addEventListener("click", function () {
+          cardOff.style.display = "none";
 
-    // Vérifier si la largeur de l'écran est inférieure à 480 pixels
-    if (screenWidth < 480) {
-      speaker.style.display = "grid";
-    } else {
-      speaker.style.display = "flex";
-    }
-  });
+          // Vérifier la largeur de l'écran lors du clic sur cardOff
+          let screenWidth =
+            window.innerWidth || document.documentElement.clientWidth;
 
-});
-
-
-
+          // Vérifier si la largeur de l'écran est inférieure à 480 pixels
+          if (screenWidth < 480) {
+            speaker.style.display = "grid";
+          } else {
+            speaker.style.display = "flex";
+          } 
+          
+        });
+      });
     </script>
   </body>
 </html>
