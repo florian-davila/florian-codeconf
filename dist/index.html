@@ -306,7 +306,7 @@
         <div class="card">
           <div class="speaker">
             <div class="gradient">
-              <img src="./image/luke@3x.jpg" alt="" />
+              <img src="./image/luke@3x.jpg" alt=" orateur Luke Wrobleswski" />
             </div>
 
             <img
@@ -341,7 +341,7 @@
         <div class="card">
           <div class="speaker">
             <div class="gradient">
-              <img src="./image/nico@3x.jpg" alt="" />
+              <img src="./image/nico@3x.jpg" alt=" orateur Nicolas Gallagher" />
             </div>
 
             <img
@@ -378,7 +378,7 @@
         <div class="card">
           <div class="speaker">
             <div class="gradient">
-              <img src="./image/rachel@3x.jpg" alt="" />
+              <img src="./image/rachel@3x.jpg" alt="oratrice Rachel Andrew" />
             </div>
 
             <img
@@ -412,7 +412,7 @@
         <div class="card">
           <div class="speaker">
             <div class="gradient">
-              <img src="./image/stephen@3x.jpg" alt="" />
+              <img src="./image/stephen@3x.jpg" alt="orateur Stephen Hay" />
             </div>
 
             <img
@@ -447,7 +447,7 @@
         <div class="card">
           <div class="speaker">
             <div class="gradient">
-              <img src="./image/paul@3x.jpg" alt="" />
+              <img src="./image/paul@3x.jpg" alt="orateur Paul Irish" />
             </div>
 
             <img
@@ -482,7 +482,7 @@
         <div class="card">
           <div class="speaker">
             <div class="gradient">
-              <img src="./image/nicole@3x.jpg" alt="" />
+              <img src="./image/nicole@3x.jpg" alt="oratrice Nicole Sullivan" />
             </div>
 
             <img
@@ -517,7 +517,7 @@
         <div class="card">
           <div class="speaker">
             <div class="gradient">
-              <img src="./image/brad@3x.jpg" alt="" />
+              <img src="./image/brad@3x.jpg" alt="orateur Brad Frost " />
             </div>
 
             <img
@@ -560,7 +560,7 @@
         </p>
         <form action="">
           <p>
-            <input placeholder="Name*" type="text" />
+            <input class="myInput" placeholder="Name*" type="text" />
           </p>
           <p>
             <input placeholder="Mail*" type="text" />
@@ -574,10 +574,7 @@
           <p class="full-width">
             <textarea
               placeholder="Short details*"
-              name=""
-              id=""
-              cols="30"
-              rows="7"
+              rows="8"
             ></textarea>
           </p>
           <p class="full-width">
@@ -587,7 +584,7 @@
         <p class="outro-form">or just participate to the present event...</p>
       </div>
       <button class="footer_button">
-        get ticket <img src="./image/PayPal_Logo_Icon_2014.svg.png" alt="" />
+        get ticket <img src="./image/PayPal_Logo_Icon_2014.svg.png" alt="icone paypal" />
         <i class="icon icon-card"></i>
       </button>
       <button class="footer_price">$199 USD</button>
@@ -656,13 +653,10 @@
       </div>
     </footer>
     <script>
-      //let iconMenu = document.querySelector(".icon-burger");
+      
       let navigation = document.getElementById("navigation");
-    /*  
-iconMenu.addEventListener("click", function() {
-  navigation.classList.toggle("active");
-}); */ 
 
+     
       let cards = document.querySelectorAll(".card");
 
       cards.forEach(function (card) {
@@ -677,11 +671,11 @@ iconMenu.addEventListener("click", function() {
         cardOff.addEventListener("click", function () {
           cardOff.style.display = "none";
 
-          // Vérifier la largeur de l'écran lors du clic sur cardOff
+          
           let screenWidth =
             window.innerWidth || document.documentElement.clientWidth;
 
-          // Vérifier si la largeur de l'écran est inférieure à 480 pixels
+         
           if (screenWidth < 480) {
             speaker.style.display = "grid";
           } else {
@@ -689,7 +683,10 @@ iconMenu.addEventListener("click", function() {
           } 
           
         });
+       
       });
+     
+      
     </script>
   </body>
 </html>

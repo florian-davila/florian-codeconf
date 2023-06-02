@@ -59,40 +59,7 @@ main{
     
     
   }
-/*
-.slider {
-  background: rgb(121, 85, 242);
-  
-  height: 13em;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 3em;
-}
-
-.slider img:nth-child(1) {
-  max-width: 15em;
-  height: 2em;
-  margin-top: -0.5em;
-}
-.slider img:nth-child(4) {
-  max-width: 40em;
-  height: 2em;
-  margin-left: -10em;
-  margin-top: -1em;
-}
-.presentor {
-  height: 18em;
-  margin-top: -5em;
-  width: 22em;
-}
-.text-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-} */
 .speaker p:nth-child(3), .speaker strong{
   color: #4C426D;
   font-family:"Museonormal", serif;
@@ -230,11 +197,11 @@ h2 {
   align-items: center;
 }
 .short button{
-  padding-inline: 3rem;
+  padding-inline: 3.5rem;
   text-transform: uppercase;
   font-family: 'Museolight', sans-serif;
-  font-size: 1.2rem;
-  padding-block: .5rem;
+  font-size: 1.5rem;
+  padding-block: .8rem;
   background: none;
   border: 1px solid #333;
 }
@@ -246,10 +213,12 @@ h2 {
 .short p {
   color: #333;
   font-size: 1.3rem;
+  text-align: center;
 }
-showed {
+#showed,#no-show {
   display: none
 }
+
 @media only screen and (max-width: 480px){
   .main_schedule{
     display: grid;
@@ -454,15 +423,15 @@ showed {
     margin-block-end: 0;
   }
   .speaker p:nth-child(3){
-    margin: 1rem 0 0 1rem;
+    margin: 1em 0 0 1.5rem;
     
   }
   .speaker strong{
-    margin: 2.5rem 0 0 1rem;
+    margin: 3.5rem 0 0 1.5rem;
     
   }
   .speaker p:nth-child(5){
-    margin: 4rem 0 0 1rem;
+    margin: 5.5rem 0 0 1.5rem;
     
     
   }
@@ -470,6 +439,7 @@ showed {
     grid-area: 1/1/1/2;
     align-self: start;
     justify-self: end;
+    margin-inline-end: 1rem;
     
   }
   .speaker_bubble{
